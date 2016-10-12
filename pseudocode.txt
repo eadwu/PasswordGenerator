@@ -1,0 +1,24 @@
+url ← INPUT () or current url's hostname
+IF (not url contains character(s) not part of the alphabet or a number from 0-9 that aren't excepted (exceptions include the dots from (www., .com, .org, etc)))
+{
+  key ← ''
+  pass ← ''
+  letter ← 0
+  length ← LENGTH (url)
+
+  FOR EACH char in url
+  {
+    key ← key . ASCII(char)
+  }
+  FOR EACH character in url
+  {
+    lnum ← ASCII(character)
+    pass ← pass . CHAR(ASCII(⌈|-length^lnum / letter + letter^lnum * length / (34 + lnum^letter - length^key + letter * key / lnum) * lnum^length % 23 + key|⌉ % (126 - 33) + 33))
+    letter ← letter + 1
+  }
+  DISPLAY (pass)
+}
+ELSE
+{
+  DISPLAY (null)
+}
