@@ -1,6 +1,5 @@
 url ← INPUT () or current url's hostname
-IF (not url contains character(s) not part of the alphabet or a number from 0-9 that aren't excepted (exceptions include the dots from (www., .com, .org, etc)))
-{
+IF (not url contains character(s) not part of the alphabet or a number from 0-9 that aren't excepted (exceptions include the dots from (www., .com, .org, etc))) {
   key ← ''
   pass ← ''
   letter ← 0
@@ -18,7 +17,6 @@ IF (not url contains character(s) not part of the alphabet or a number from 0-9 
   }
   DISPLAY (pass)
 }
-ELSE
-{
+ELSE {
   DISPLAY (null)
 }
