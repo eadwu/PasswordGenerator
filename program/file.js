@@ -2,6 +2,9 @@
 Regex obtained from Anthony in the stackexchange post
 http://webmasters.stackexchange.com/questions/1186/how-do-you-remove-invalid-characters-when-creating-a-friendly-url-ie-how-do-you
  */
+const url = window.location.hostname;
+const length = url.length;
+
 function toCipherText(string, key) {
   let length = string.length;
   let snew = '';
@@ -31,8 +34,8 @@ function isURLValid(string, exceptions) { // Exceptions handles the periods that
   }
 }
 
-if (isURLValid(window.location.hostname, 2)) {
-  console.log(toCipherText(window.location.hostname, toASCII(window.location.hostname)));
+if (isURLValid(url, 2)) {
+  console.log(toCipherText(url, toASCII(url)));
 } else {
   console.log(null);
 }
