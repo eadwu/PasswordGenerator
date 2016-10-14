@@ -1,0 +1,8 @@
+The function for the password generator generates a unique password as no two urls are the same.
+
+So this way the keys of each website will be different.
+
+The conversion of the website's hostname to ASCII generates a unique key.
+
+Repeating letters in the hostname will not always generate the same character as the equation used for the ciphering uses a number unique
+to each character in the string (position of the character in the string).
