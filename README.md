@@ -1,3 +1,3 @@
 Javascript code snippets
 
-https://gist.github.com/Kutoru/307b31174b507ac38d0d36297f97128f
+https://gist.github.com/ewap-guy/33593cb5ef5768bf6a91d13e77e720af
